@@ -304,28 +304,6 @@ main {
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1080px) {
   header {
     display: flex;
@@ -390,4 +368,3 @@ main {
     padding: 0;
   }
   
-}
