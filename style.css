@@ -310,7 +310,6 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  flex: 1 0 0;
   width: 50%;
 }
 
@@ -423,6 +422,85 @@ main {
   .footer-link {
     padding: 0;
   }
+
+  .sneaker__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 32px 16px;
+    gap: 32px;
+    width: 295px;
+    align-self: stretch;
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .sneaker__img img{
+    width: 295px;
+  }
+
+  .catalog {
+    margin: 0;
+    width: 375px;
+  }
+
+  .sneaker__text {
+    align-self: stretch;
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    text-align: start;
+    width: 100%;
+  }
+  
+  .sneaker__parameters {
+    font-family: "Anonymous Pro";
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .sneaker__parameter_tittle {
+    font-size: 16px;
+  }
+
+  .sneaker__value {
+    font-size: 16px;
+  }
+
+  .sneaker__title {
+    color: #121723;
+    font-family: "Anonymous Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 48px */
+    text-align: start;
+  }
+  
+  .sneaker__subtitle {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    margin: 24px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+  }
+
+  .sneaker__add__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+  }
   
 }
 
@@ -510,6 +588,26 @@ main {
 
   .footer-link {
     padding: 0;
+  }
+
+  .sneaker__title {
+    color: #121723;
+    font-family: "Anonymous Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 48px */
+    text-align: start;
+  }
+  
+  .sneaker__subtitle {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    margin: 24px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
   }
   
 }
