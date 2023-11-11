@@ -1,3 +1,5 @@
+/* Подключение шрифтов */
+
 @font-face {
     font-family: "Anonymous Pro";
     src: url(fonts/AnonymousPro-Bold.ttf);
@@ -9,6 +11,8 @@
   src: url(fonts/AnonymousPro-Regular.ttf);
 }
 
+/* Настройка отображения загаловок, абзаца и картинок */
+
 h1 {
     font-family: "Anonymous Pro", sans-serif;
     font-size: 56px;
@@ -17,25 +21,6 @@ h1 {
 h2 {
   font-family: "Anonymous Pro", sans-serif;
 	font-size: 48px;
-}
-
-body {
-  margin: 0;
-}
-
-.container {
-	display: inline-block;
-	margin: 15px;
-  background-color: white;
-  border-radius: 12px;
-  text-align: start;
-  width: 364px;
-  vertical-align: top;
-  transition: .25s ease-out;
-}
-
-.container img {
-  width: 364px;
 }
 
 h3 {
@@ -52,6 +37,61 @@ img {
 	width: inherit;
   border-radius: inherit;
 }
+
+/* Стандартизация тела для margin */
+
+body {
+  margin: 0;
+}
+
+/* Настройка отображения карточек */
+
+.container {
+	display: inline-block;
+	margin: 15px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: start;
+  width: 364px;
+  vertical-align: top;
+  transition: .25s ease-out;
+}
+
+.container img {
+  width: 364px;
+}
+
+.container h3 {
+  text-align: start;
+}
+
+.container__title {
+  overflow-wrap: normal;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.container__text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container a {
+  text-decoration: none;
+  color:#121723;
+  border-radius: 12px;
+}
+
+.container__info {
+  margin: 32px 24px;
+}
+
+.container:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: translateY(-10px);
+}
+
+/* Создание стилей для шапки сайта */
 
 header {
   font-family: "Anonymous Pro", sans-serif;
@@ -97,6 +137,8 @@ header .navbar-link a:hover {
   text-decoration: underline;
 }
 
+/* Создание стилей для подвала сайта */
+
 footer {
   bottom: 0;
   left: 0;
@@ -116,10 +158,6 @@ footer {
 
 .footer img {
   width: 300px;
-}
-
-.container h3 {
-  text-align: start;
 }
 
 .footer-cont {
@@ -167,27 +205,30 @@ footer {
   line-height: normal;
 }
 
+.footer-link ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: top;
+  display: flex;
+}
+
+.footer-link a {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Настройка сетки для карточек с кроссовками */
+
 .description {
   background-color: #121723;
   text-align: center;
   padding: 15px 0;
 }
 
-
 .description a{
   color: gray;
   font-weight: 700;
-}
-
-.container__title {
-  overflow-wrap: normal;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.container__text {
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .subtitle {
@@ -215,33 +256,7 @@ main {
   max-width: 1440px;
 }
 
-.container a {
-  text-decoration: none;
-  color:#121723;
-  border-radius: 12px;
-}
-
-.container__info {
-  margin: 32px 24px;
-}
-
-.container:hover{
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transform: translateY(-10px);
-}
-
-.footer-link ul{
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  vertical-align: top;
-  display: flex;
-}
-
-.footer-link a {
-  font-weight: 700;
-  font-size: 20px;
-}
+/* Настройка страницы с описанием кроссовка */
 
 .sneaker__card {
   display: flex;
@@ -353,8 +368,11 @@ main {
   line-height: normal;
 }
 
+/* Конец кода стилей для desctop */
 
 
+
+/* Стиль-адаптация под мобильные устройства */
 
 @media (max-width: 376px) {
   header {
@@ -475,6 +493,15 @@ main {
     font-size: 16px;
   }
 
+  .sneaker__header {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   .sneaker__title {
     color: #121723;
     font-family: "Anonymous Pro";
@@ -505,6 +532,12 @@ main {
   }
   
 }
+
+/* Конец кода стилей под мобильные устройства  */
+
+
+
+/* Стиль-адаптация под другие устройства */
 
 @media (max-width: 1080px) {
   header {
@@ -650,6 +683,6 @@ main {
     align-self: stretch;
   }
   
-  
-}
+/* Конец кода стилей для различных устройств и для всего сайта в целом */
+=======
 
